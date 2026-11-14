@@ -5,10 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="only dark">
 <meta name="darkreader-lock">
+<meta name="theme-color" content="#000413">
 <title>Графиня. Презентация</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <style>
+/* Тёмная тема встроена: расширения вроде Noir и Dark Reader ищут это правило и не перекрашивают страницу */
+@media (prefers-color-scheme: dark) { :root { color-scheme: dark; } }
+@media (prefers-color-scheme: light) { :root { color-scheme: dark; } }
 /* Шрифты локально: презентация и PDF не зависят от интернета */
 @font-face { font-family: "Montserrat"; font-weight: 500; src: url("assets/fonts/Montserrat-Medium.woff2") format("woff2"); }
 @font-face { font-family: "Montserrat"; font-weight: 700; src: url("assets/fonts/Montserrat-Bold.woff2") format("woff2"); }
